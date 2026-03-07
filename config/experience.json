@@ -1,0 +1,18 @@
+[
+  {
+    "id": "exp-1",
+    "role": "Independent Backend Engineer",
+    "company": "Open Source / Personal Labs",
+    "period": "2023 - Present",
+    "description": "Architecting and deploying full-stack applications with a focus on system design, database optimization, and containerization. Building tools for developer productivity and real-time collaboration.",
+    "type": "experience"
+  },
+  {
+    "id": "edu-1",
+    "role": "Integrated (B.Tech + M.Tech) in ECE",
+    "company": "JNTU Hyderabad",
+    "period": "2022 - Present",
+    "description": "specializing in Embedded Systems and Digital Signal Processing. Applying low-level engineering concepts (C, Memory Management) to high-level backend architecture.",
+    "type": "education"
+  }
+]

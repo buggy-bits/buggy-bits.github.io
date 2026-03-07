@@ -1,0 +1,145 @@
+@import url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800&f[]=satoshi@400,500,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 4%;
+    --foreground: 0 0% 93%;
+
+    --card: 0 0% 6%;
+    --card-foreground: 0 0% 93%;
+
+    --popover: 0 0% 6%;
+    --popover-foreground: 0 0% 93%;
+
+    --primary: 48 97% 53%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 93%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 48 97% 53%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 93%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 48 97% 53%;
+
+    --radius: 0.5rem;
+
+    /* Custom tokens */
+    --glass: 0 0% 100% / 0.05;
+    --glass-border: 0 0% 100% / 0.1;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+    cursor: none;
+  }
+
+  ::selection {
+    background-color: hsl(var(--primary));
+    color: hsl(0 0% 0%);
+  }
+
+  a,
+  button {
+    cursor: none;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-[hsl(var(--glass))] backdrop-blur-xl border border-[hsl(var(--glass-border))];
+  }
+
+  .gradient-mask-bottom {
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  }
+
+  .gradient-mask-left {
+    mask-image: linear-gradient(to right, transparent 0%, black 30%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 30%);
+  }
+
+  .gradient-mask-blend {
+    mask-image: linear-gradient(to right, transparent 0%, black 20%),
+      linear-gradient(to bottom, black 70%, transparent 100%);
+    mask-composite: intersect;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%),
+      linear-gradient(to bottom, black 70%, transparent 100%);
+    -webkit-mask-composite: source-in;
+  }
+
+  .image-grayscale {
+    @apply grayscale transition-all duration-500 ease-out;
+  }
+
+  .image-grayscale:hover {
+    @apply grayscale-0;
+  }
+
+  .corner-borders {
+    @apply relative;
+  }
+
+  .corner-borders::before,
+  .corner-borders::after {
+    content: '';
+    @apply absolute w-8 h-8 opacity-0 transition-opacity duration-300;
+    border-color: hsl(var(--primary));
+  }
+
+  .corner-borders::before {
+    @apply top-0 left-0;
+    border-top: 1px solid;
+    border-left: 1px solid;
+  }
+
+  .corner-borders::after {
+    @apply bottom-0 right-0;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+  }
+
+  .corner-borders:hover::before,
+  .corner-borders:hover::after {
+    @apply opacity-100;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent;
+  }
+
+  .link-arrow {
+    @apply inline-flex items-center gap-2;
+  }
+
+  .link-arrow svg {
+    @apply transition-transform duration-300;
+  }
+
+  .link-arrow:hover svg {
+    @apply translate-x-1 -translate-y-1;
+  }
+}

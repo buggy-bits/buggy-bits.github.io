@@ -1,0 +1,117 @@
+[
+  {
+    "name": "TypeScript",
+    "description": "Enforcing strict type safety in complex full-stack architectures",
+    "url": "https://www.typescriptlang.org/",
+    "category": "language"
+  },
+  {
+    "name": "Go",
+    "description": "Building high-concurrency microservices and backend tools",
+    "url": "https://go.dev/",
+    "category": "language"
+  },
+  {
+    "name": "Python",
+    "description": "Scripting automation bots, web scraping, and data analysis",
+    "url": "https://www.python.org/",
+    "category": "language"
+  },
+  {
+    "name": "Java",
+    "description": "Algorithm optimization (300+ LeetCode) and OOP patterns",
+    "url": "https://dev.java/",
+    "category": "language"
+  },
+  {
+    "name": "SQL",
+    "description": "Designing normalized schemas and complex relational queries",
+    "url": "https://www.postgresql.org/",
+    "category": "language"
+  },
+  {
+    "name": "C",
+    "description": "System-level programming and firmware logic for embedded hardware",
+    "url": "https://en.cppreference.com/w/c",
+    "category": "language"
+  },
+
+  {
+    "name": "Node.js",
+    "description": "Architecting scalable REST APIs (EchoSphere, TinyURL)",
+    "url": "https://nodejs.org/",
+    "category": "core"
+  },
+  {
+    "name": "React",
+    "description": "Building interactive UIs with complex state management",
+    "url": "https://react.dev/",
+    "category": "core"
+  },
+  {
+    "name": "Next.js",
+    "description": "Server-side rendering (SSR) for high-performance web apps",
+    "url": "https://nextjs.org/",
+    "category": "core"
+  },
+  {
+    "name": "MongoDB",
+    "description": "Handling flexible data models for rapid application development",
+    "url": "https://www.mongodb.com/",
+    "category": "core"
+  },
+  {
+    "name": "Redis",
+    "description": "Implemented caching and Pub/Sub for Collab Code",
+    "url": "https://redis.io/",
+    "category": "core"
+  },
+  {
+    "name": "WebSockets",
+    "description": "Powering live collaboration features in real-time apps",
+    "url": "https://socket.io/",
+    "category": "core"
+  },
+  {
+    "name": "MQTT",
+    "description": "Optimized M2M communication for IoT sensor networks",
+    "url": "https://mqtt.org/",
+    "category": "core"
+  },
+  {
+    "name": "Docker",
+    "description": "Containerizing services for consistent dev-to-prod environments",
+    "url": "https://www.docker.com/",
+    "category": "tool"
+  },
+  {
+    "name": "Git & GitHub",
+    "description": "Managing version history and open-source collaboration",
+    "url": "https://github.com/",
+    "category": "tool"
+  },
+  {
+    "name": "Postman",
+    "description": "Documenting and stress-testing API endpoints",
+    "url": "https://www.postman.com/",
+    "category": "tool"
+  },
+  {
+    "name": "Adobe Suite",
+    "description": "Designing vectors, logos, and promotional motion graphics",
+    "url": "https://www.adobe.com/",
+    "category": "tool"
+  },
+  {
+    "name": "IoT / ESP32",
+    "description": "Prototyping logic for UAVs and hydroponic sensors",
+    "url": "https://www.espressif.com/",
+    "category": "tool"
+  },
+  {
+    "name": "Framer Motion",
+    "description": "Crafting smooth, physics-based UI micro-interactions",
+    "url": "https://www.framer.com/motion/",
+    "category": "tool"
+  }
+]
