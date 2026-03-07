@@ -1,6 +1,11 @@
 import React from "react";
-import CONFIG from "../../config/stack.json";
-import { TechItem } from "../../types";
+import { StackItem } from "../../types";
+
+type TechItem = StackItem;
+
+interface NewTechStackProps {
+  stack: StackItem[];
+}
 
 const TechGroup: React.FC<{ title: string; items: TechItem[] }> = ({
   title,
@@ -40,22 +45,22 @@ const TechGroup: React.FC<{ title: string; items: TechItem[] }> = ({
   );
 };
 
-const NewTechStack: React.FC = () => {
-  const core = CONFIG.filter((t) => t.category === "core");
-  const languages = CONFIG.filter((t) => t.category === "language");
-  const tools = CONFIG.filter((t) => t.category === "tool");
+const NewTechStack: React.FC<NewTechStackProps> = ({ stack }) => {
+  const core = stack.filter((t) => t.category === "core");
+  const languages = stack.filter((t) => t.category === "language");
+  const tools = stack.filter((t) => t.category === "tool");
 
   return (
     <section
       className="py-24 px-6 md:px-12 max-w-7xl mx-auto border-t border-white/5 relative"
       id="tech-stack"
     >
-      <span className="text-zinc-500 lg:col-span-1 font-mono text-sm mt-4 md:mt-0 absolute top-10 right-0">
+      <span className="text-zinc-500 font-mono text-sm hidden md:block absolute top-10 right-6 lg:right-0">
         02 // STACK_INIT
       </span>
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
         <div className="lg:col-span-1">
-          <h2 className="text-4xl font-heading font-bold text-text">
+          <h2 className="text-4xl font-heading font-bold text-white">
             Technical Arsenal
           </h2>
           <p className="mt-4 text-zinc-500 text-sm font-body max-w-xs">

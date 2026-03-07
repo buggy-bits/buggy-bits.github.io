@@ -53,17 +53,22 @@
 
   body {
     @apply bg-background text-foreground font-body antialiased;
-    cursor: none;
+  }
+
+  /* Only hide cursor on devices that support hover (desktop with mouse) */
+  @media (hover: hover) and (pointer: fine) {
+    body {
+      cursor: none;
+    }
+    a,
+    button {
+      cursor: none;
+    }
   }
 
   ::selection {
     background-color: hsl(var(--primary));
     color: hsl(0 0% 0%);
-  }
-
-  a,
-  button {
-    cursor: none;
   }
 }
 

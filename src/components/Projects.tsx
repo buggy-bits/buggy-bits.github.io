@@ -10,10 +10,10 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
   return (
     <section
       id="projects"
-      className="py-32 px-6 lg:px-12 bg-background border-t border-zinc-900"
+      className="py-16 md:py-32 px-6 lg:px-12 bg-background border-t border-zinc-900"
     >
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-24 border-b border-zinc-800 pb-6">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 md:mb-24 border-b border-zinc-800 pb-6">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-white">
             Selected <br /> Works
           </h2>
@@ -22,7 +22,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
           </span>
         </div>
 
-        <div className="space-y-32">
+        <div className="space-y-16 md:space-y-32">
           {projects.map((project, index) => (
             <div
               key={project.id}
@@ -77,20 +77,30 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
               </div>
 
               {/* Image Content */}
-              <div className="flex-1 w-full perspective-1000 group">
-                <div className="relative w-full aspect-[4/3] transform transition-all duration-700 ease-out lg:rotate-y-12 lg:group-hover:rotate-y-0 lg:group-hover:translate-z-10 shadow-2xl bg-zinc-900 border border-zinc-800 overflow-hidden">
+              <div className="flex-1 w-full group">
+                <div
+                  className="relative w-full aspect-video shadow-2xl border border-zinc-800 overflow-hidden"
+                  style={{
+                    backgroundColor: "#0d0d0f",
+                    backgroundImage:
+                      "radial-gradient(circle, #27272a 1px, transparent 1px)",
+                    backgroundSize: "20px 20px",
+                  }}
+                >
                   {/* Overlay for inactive state */}
                   <div className="absolute inset-0 bg-black/40 z-10 transition-opacity duration-500 group-hover:opacity-0" />
 
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover filter grayscale transition-all duration-700 group-hover:scale-105 group-hover:grayscale-0"
+                    className="w-full h-full object-contain p-4 filter grayscale transition-all duration-700 group-hover:scale-105 group-hover:grayscale-0"
                   />
 
                   {/* Corner accents */}
-                  <div className="absolute top-4 left-4 w-2 h-2 border-t border-l border-white/50 z-20" />
-                  <div className="absolute bottom-4 right-4 w-2 h-2 border-b border-r border-white/50 z-20" />
+                  <div className="absolute top-3 left-3 w-4 h-4 border-t border-l border-primary/40 z-20" />
+                  <div className="absolute top-3 right-3 w-4 h-4 border-t border-r border-primary/40 z-20" />
+                  <div className="absolute bottom-3 left-3 w-4 h-4 border-b border-l border-primary/40 z-20" />
+                  <div className="absolute bottom-3 right-3 w-4 h-4 border-b border-r border-primary/40 z-20" />
                 </div>
               </div>
             </div>

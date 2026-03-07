@@ -1,10 +1,10 @@
 [
   {
     "id": "proj-1",
-    "title": "CollabCode IDE",
+    "title": "CollabCode",
     "description": "A real-time collaborative coding environment. Uses WebSockets for instant synchronization and Docker containers for safe, ephemeral code execution.",
     "tech": ["React", "Node.js", "Redis", "WebSockets", "Docker"],
-    "image": "/assets/projects/totp.png",
+    "image": "/assets/projects/totpCopy.png",
     "links": {
       "demo": "https://collab-code-demo.com",
       "repo": "https://github.com/yourusername/collab-code"

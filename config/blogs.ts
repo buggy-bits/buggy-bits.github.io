@@ -25,15 +25,6 @@ const blogs = [
     readTime: "6 min",
     url: "https://blog.alexchen.dev/rest-to-graphql",
   },
-  {
-    id: 4,
-    title: "Why I Switched from REST to GraphQL",
-    excerpt:
-      "Trade-offs, migration strategies, and performance considerations.",
-    date: "2023-09-05",
-    readTime: "6 min",
-    url: "https://blog.alexchen.dev/rest-to-graphql",
-  },
 ];
 
 export default blogs;

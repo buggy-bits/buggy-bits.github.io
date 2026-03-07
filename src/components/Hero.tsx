@@ -10,7 +10,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ profile }) => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 lg:px-12 pt-10">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 lg:px-12 pt-20 pb-10 md:pt-10 md:pb-0">
       <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center z-10">
         {/* Left: Text Content */}
         <div className="order-2 lg:order-1 flex flex-col items-start gap-8">
@@ -92,11 +92,11 @@ const Hero: React.FC<HeroProps> = ({ profile }) => {
         </div>
 
         {/* Right: Blended Image */}
-        <div className="order-1 lg:order-2 relative w-full h-[50vh] lg:h-[80vh] group">
+        <div className="order-1 lg:order-2 relative w-full h-[35vh] md:h-[50vh] lg:h-[80vh] group">
           {/* The Image Container */}
           <div className="absolute inset-0 w-full h-full transition-all duration-700 ease-out filter grayscale group-hover:grayscale-0">
             <img
-              src="/assets/vector_potrait1.png"
+              src="/assets/vector_potrait2C.png"
               alt="Portrait"
               className="w-full h-full object-cover object-center"
               style={{

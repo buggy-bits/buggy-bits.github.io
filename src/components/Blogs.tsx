@@ -7,10 +7,10 @@ const Blogs = () => {
   if (blogs.length === 0) return null;
 
   return (
-    <section className="py-32 relative px-6" id="blogs">
+    <section className="py-16 md:py-32 relative px-6" id="blogs">
       <div className="container mx-auto max-w-7xl">
         <motion.div
-          className="mb-8 flex flex-col md:flex-row justify-between items-end mb-24 border-b border-zinc-800 pb-6"
+          className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 md:mb-24 border-b border-zinc-800 pb-6"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -29,7 +29,7 @@ const Blogs = () => {
           </span>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {blogs.map((blog, index) => (
             <motion.a
               key={blog.id}

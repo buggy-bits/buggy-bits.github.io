@@ -17,11 +17,11 @@ const Experience: React.FC<ExperienceProps> = ({ experience }) => {
 
   return (
     <section
-      className="py-32 px-6 lg:px-12 bg-background border-t border-zinc-900"
+      className="py-16 md:py-32 px-6 lg:px-12 bg-background border-t border-zinc-900"
       id="experience"
     >
       <div className="max-w-4xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-20 border-b border-zinc-800 pb-6">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 md:mb-20 border-b border-zinc-800 pb-6">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-white">
             History <br /> Log
           </h2>

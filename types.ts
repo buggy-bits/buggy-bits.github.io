@@ -10,12 +10,6 @@ export interface Profile {
     resume: string;
   };
 }
-export interface TechItem {
-  name: string;
-  description: string;
-  url: string; // Documentation URL
-  category: "core" | "language" | "tool";
-}
 
 export interface StackItem {
   name: string;
