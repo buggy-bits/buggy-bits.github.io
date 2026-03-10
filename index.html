@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sainag Gadangi | Backend Developer</title>
+    <link rel="icon" href="/buggy-bits.github.io/assets/favicon-B02qN4WB.png" />
+    <!-- Fonts: Cabinet Grotesk & Satoshi -->
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=cabinet-grotesk@500,700,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: "#09090b", // Deepest Zinc
+              surface: "rgba(255, 255, 255, 0.05)",
+              primary: "#fbbf24", // Electric Amber / Cyber Yellow approximation
+              subtle: "#27272a",
+              accent: "#FACC15", // Cyber Yellow
+            },
+            fontFamily: {
+              sans: ["Satoshi", "sans-serif"],
+              display: ["Cabinet Grotesk", "sans-serif"],
+              heading: ["Cabinet Grotesk", "sans-serif"],
+              body: ["Satoshi", "sans-serif"],
+            },
+            backgroundImage: {
+              "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        background-color: #09090b;
+        color: #e4e4e7;
+        overflow-x: hidden;
+      }
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      ::-webkit-scrollbar {
+        display: none;
+      }
+      /* Hide scrollbar for IE, Edge and Firefox */
+      html {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+    </style>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://esm.sh/react@^19.2.3",
+          "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+          "react/": "https://esm.sh/react@^19.2.3/",
+          "framer-motion": "https://esm.sh/framer-motion@^12.23.26",
+          "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+        }
+      }
+    </script>
+    <script type="module" crossorigin src="/buggy-bits.github.io/assets/index-CUjwC4jt.js"></script>
+    <link rel="stylesheet" crossorigin href="/buggy-bits.github.io/assets/index-DkJ2s9HJ.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
