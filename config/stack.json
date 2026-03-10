@@ -7,19 +7,19 @@
   },
   {
     "name": "Go",
-    "description": "Building high-concurrency microservices and backend tools",
+    "description": "Building cli and backend tools",
     "url": "https://go.dev/",
     "category": "language"
   },
   {
     "name": "Python",
-    "description": "Scripting automation bots, web scraping, and data analysis",
+    "description": "Scripting automation bots and web scraping",
     "url": "https://www.python.org/",
     "category": "language"
   },
   {
     "name": "Java",
-    "description": "Algorithm optimization (300+ LeetCode) and OOP patterns",
+    "description": "Data Structures And Algorithms, OOP patterns",
     "url": "https://dev.java/",
     "category": "language"
   },
@@ -31,14 +31,14 @@
   },
   {
     "name": "C",
-    "description": "System-level programming and firmware logic for embedded hardware",
+    "description": "Explored for low-level programming, pointers, and memory management.",
     "url": "https://en.cppreference.com/w/c",
     "category": "language"
   },
 
   {
     "name": "Node.js",
-    "description": "Architecting scalable REST APIs (EchoSphere, TinyURL)",
+    "description": "Architecting scalable REST APIs",
     "url": "https://nodejs.org/",
     "category": "core"
   },
@@ -62,13 +62,13 @@
   },
   {
     "name": "Redis",
-    "description": "Implemented caching and Pub/Sub for Collab Code",
+    "description": "Implemented caching and Pub/Sub for real-time features",
     "url": "https://redis.io/",
     "category": "core"
   },
   {
     "name": "WebSockets",
-    "description": "Powering live collaboration features in real-time apps",
+    "description": "Powering real-time features for full-duplex communications",
     "url": "https://socket.io/",
     "category": "core"
   },
@@ -80,7 +80,7 @@
   },
   {
     "name": "Docker",
-    "description": "Containerizing services for consistent dev-to-prod environments",
+    "description": "Containerizing services for consistent dev environments",
     "url": "https://www.docker.com/",
     "category": "tool"
   },
@@ -104,8 +104,8 @@
   },
   {
     "name": "IoT / ESP32",
-    "description": "Prototyping logic for UAVs and hydroponic sensors",
-    "url": "https://www.espressif.com/",
+    "description": "Prototyping logic for UAVs and sensor networks using ESP32 microcontrollers",
+    "url": "https://www.arduino.cc/",
     "category": "tool"
   },
   {

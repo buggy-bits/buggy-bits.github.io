@@ -1,68 +1,75 @@
 [
   {
-    "id": "proj-1",
-    "title": "CollabCode",
-    "description": "A real-time collaborative coding environment. Uses WebSockets for instant synchronization and Docker containers for safe, ephemeral code execution.",
-    "tech": ["React", "Node.js", "Redis", "WebSockets", "Docker"],
-    "image": "/assets/projects/totpCopy.png",
+    "id": "proj-5",
+    "title": "ZeroVault",
+    "description": "A zero-knowledge encrypted notes and file-sharing system where server is blind to user data. End-to-end encryption with client-side key management ensures only users can access their content.",
+    "tech": [
+      "React",
+      "Express",
+      "Web Crypto API",
+      "MongoDB",
+      "Google Drive API"
+    ],
+    "image": "/assets/projects/zeroVault.png",
     "links": {
-      "demo": "https://collab-code-demo.com",
-      "repo": "https://github.com/yourusername/collab-code"
+      "demo": "https://zero-vault-web.vercel.app/",
+      "repo": "https://github.com/buggy-bits/zero-vault"
+    }
+  },
+  {
+    "id": "proj-1",
+    "title": "QR Hunt",
+    "description": "A full-stack treasure hunt game built for college fest where players hunt for QR Locations by solving challanges.",
+    "tech": ["React", "Firestore", "Node.js", "Context API", "JWT"],
+    "image": "/assets/projects/qrHunt.png",
+    "links": {
+      "demo": "https://qr-hunt-web.vercel.app/",
+      "repo": "https://github.com/buggy-bits/qr-hunt-web"
     }
   },
   {
     "id": "proj-2",
-    "title": "QR Hunt",
-    "description": "A full-stack treasure hunt game built for college fests. Features live leaderboards using Firestore, JWT authentication, and dynamic QR code validation.",
-    "tech": ["React", "Firebase", "Firestore", "Node.js", "Context API", "JWT"],
-    "image": "/images/qr-hunt.png",
+    "title": "CollabCode",
+    "description": "Collabrative Code Editor that enables multiple people to work on project same time.",
+    "tech": ["React", "Node.js", "Redis", "WebSockets", "Docker", "Yjs"],
+    "image": "/assets/projects/collabCode.png",
     "links": {
-      "demo": "https://qr-hunt-demo.com",
-      "repo": "https://github.com/yourusername/qr-hunt"
-    }
-  },
-  {
-    "id": "proj-3",
-    "title": "EchoSphere",
-    "description": "High-performance mock API generator. Allows frontend devs to define JSON schemas and receive instant, rate-limited REST endpoints for testing.",
-    "tech": ["React", "Express", "PostgreSQL", "JWT"],
-    "image": "/images/echosphere.png",
-    "links": {
-      "demo": "https://echosphere.com",
-      "repo": "https://github.com/yourusername/echosphere"
+      "demo": "",
+      "repo": "https://github.com/buggy-bits/CollabCode"
     }
   },
   {
     "id": "proj-4",
-    "title": "TOTP Generator",
-    "description": "A secure, ephemeral vault for storing TOTP secrets. Implements time-based one-time passwords with encryption and auto-deletion features for enhanced security.",
-    "tech": ["TypeScript", "React", "MongoDB", "Express"],
-    "image": "/images/ephemeral-vault.png",
+    "title": "EchoSphere",
+    "description": "High-performance mock API generator. Allows frontend devs to define JSON schemas and receive instant, time delayed REST endpoints for testing.",
+    "tech": ["React", "Express", "MongoDB", "JWT"],
+    "image": "/assets/projects/echoSphere.png",
     "links": {
-      "demo": "https://vault-demo.com",
-      "repo": "https://github.com/yourusername/ephemeral-vault"
+      "demo": "https://echosphere-psi.vercel.app/",
+      "repo": "https://github.com/buggy-bits/echosphere"
     }
   },
+
   {
-    "id": "proj-5",
+    "id": "proj-3",
     "title": "TinyURL",
-    "description": "Scalable URL shortening service. Engineered for high-read throughput with caching strategies and analytics tracking for click events.",
-    "tech": ["Node.js", "Redis", "MongoDB"],
-    "image": "/images/snaplink.png",
+    "description": "URL shortening service. Engineered for high-read throughput and analytics tracking for click events.",
+    "tech": ["Node.js", "MongoDB", "React"],
+    "image": "/assets/projects/tinyUrl.png",
     "links": {
-      "demo": "https://snaplink-demo.com",
-      "repo": "https://github.com/yourusername/snaplink"
+      "demo": "https://tiny-url-rose.vercel.app/",
+      "repo": "https://github.com/buggy-bits/tiny-url"
     }
   },
   {
     "id": "proj-6",
-    "title": "Mount Mate",
-    "description": "A developer utility tool that generates JSON file system structures for WebContainers, streamlining the setup of browser-based node environments.",
-    "tech": ["JavaScript", "WebContainers", "File System API", "JSON"],
-    "image": "/images/mount-mate.png",
+    "title": "cli-todo",
+    "description": "A Command Line Interface app built using GO. Manage your todos effectively within your terminal.",
+    "tech": ["Go"],
+    "image": "/assets/projects/todoCli.png",
     "links": {
-      "demo": "#",
-      "repo": "https://github.com/yourusername/mount-mate"
+      "demo": "https://github.com/buggy-bits/todo-cli/releases/tag/v1.0.0",
+      "repo": "https://github.com/buggy-bits/todo-cli/"
     }
   }
 ]

@@ -96,7 +96,7 @@ const Hero: React.FC<HeroProps> = ({ profile }) => {
           {/* The Image Container */}
           <div className="absolute inset-0 w-full h-full transition-all duration-700 ease-out filter grayscale group-hover:grayscale-0">
             <img
-              src="/assets/vector_potrait2C.png"
+              src="/assets/vector_potrait2.png"
               alt="Portrait"
               className="w-full h-full object-cover object-center"
               style={{

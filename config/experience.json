@@ -1,6 +1,6 @@
 [
   {
-    "id": "exp-1",
+    "id": "exp-2",
     "role": "Independent Backend Engineer",
     "company": "Open Source / Personal Labs",
     "period": "2023 - Present",
@@ -9,10 +9,10 @@
   },
   {
     "id": "edu-1",
-    "role": "Integrated (B.Tech + M.Tech) in ECE",
+    "role": "Integrated Dual Degree (B.Tech + M.Tech) in ECE",
     "company": "JNTU Hyderabad",
     "period": "2022 - Present",
-    "description": "specializing in Embedded Systems and Digital Signal Processing. Applying low-level engineering concepts (C, Memory Management) to high-level backend architecture.",
+    "description": "Specializing in Embeded Systems and Communication Signal Processing.",
     "type": "education"
   }
 ]

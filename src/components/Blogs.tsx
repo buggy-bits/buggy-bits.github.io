@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight, Clock } from "lucide-react";
-import blogs from "../../config/blogs";
+import blogs from "../../config/blogs.json";
 
 const Blogs = () => {
   // Don't render if no blogs

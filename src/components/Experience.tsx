@@ -1,6 +1,6 @@
 import React from "react";
 import { ExperienceItem } from "../../types";
-import blogs from "../../config/blogs";
+import blogs from "../../config/blogs.json";
 interface ExperienceProps {
   experience: ExperienceItem[];
 }
@@ -23,7 +23,7 @@ const Experience: React.FC<ExperienceProps> = ({ experience }) => {
       <div className="max-w-4xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 md:mb-20 border-b border-zinc-800 pb-6">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-white">
-            History <br /> Log
+            History Log
           </h2>
           <span className="text-zinc-500 font-mono text-sm mt-4 md:mt-0">
             {sectionCode}

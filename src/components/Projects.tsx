@@ -56,15 +56,18 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
                 </div>
 
                 <div className="flex items-center gap-6 pt-4">
-                  <a
-                    href={project.links.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-white hover:text-primary transition-colors font-medium group"
-                  >
-                    Live Demo{" "}
-                    <ArrowUpRight className="w-4 h-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-                  </a>
+                  {project.links.demo && (
+                    <a
+                      href={project.links.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-white hover:text-primary transition-colors font-medium group"
+                    >
+                      Live Demo{" "}
+                      <ArrowUpRight className="w-4 h-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                    </a>
+                  )}
+
                   <a
                     href={project.links.repo}
                     target="_blank"

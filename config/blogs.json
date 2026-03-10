@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "title": "Building a Zero-Knowledge Notes & File Sharing App",
+    "excerpt": "What it actually takes to build a web app where the server cannot read user data",
+    "date": "2026-01-28",
+    "readTime": "12 min",
+    "url": "https://medium.com/@saigadangi/building-a-zero-knowledge-notes-file-sharing-app-zerovault-02315135a5d4"
+  }
+]
